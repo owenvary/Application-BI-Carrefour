@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OAuth / tokens
+.oauth_tokens/
+*.token
+token*.json
+
+# Google credentials (NE JAMAIS COMMIT)
+credentials.json
+client_secret*.json
+
+# Local data/cache
+data/
+temp_pdfs/
+*.csv
+
+# IDE
+.idea/
+.vscode/
