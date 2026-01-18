@@ -34,6 +34,6 @@ Application-BI-Carrefour/
         ├── nt_lbb.csv
         ├── nt_supergroup.csv
         ├── nt_cheritel.csv
-'''
         ├── nt_autentik.csv
         └── df_traitee.csv         # CSV global utilisé par l’analyse (reconstruit sans reparser tous les PDF)
+'''
