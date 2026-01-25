@@ -16,10 +16,10 @@ Application-BI-Carrefour/
 │   └── google_drive_manager.py    # (legacy) Service account / ancien manager Drive (non utilisé en prod)
 │
 ├── .streamlit/
-│   ├── config.toml                # (optionnel) Config UI Streamlit (theme, layout…)
-│   └── secrets.toml               # ❌ Local only (non commité) : BASE_FOLDER_ID + OAuth client (Cloud = Settings/Secrets)
+│   ├── config.toml                # Config UI Streamlit (theme, layout…)
+│   └── secrets.toml               # ❌ Local (non commité) : BASE_FOLDER_ID + OAuth client (Cloud = Settings/Secrets)
 │
-├── .oauth_tokens/                 # ❌ Local/runtime only (non commité) : tokens OAuth par user (peut être éphémère en cloud)
+├── .oauth_tokens/                 # ❌ Local/runtime (non commité) : tokens OAuth par user (peut être éphémère en cloud)
 │
 └── data/                          # ❌ Cache local/runtime (non commité)
     ├── temp_pdfs/                 # PDFs téléchargés depuis Drive pour extraction (runtime)
@@ -29,11 +29,11 @@ Application-BI-Carrefour/
     │   ├── CHERITEL/
     │   └── AUTENTIK/
     │
-    └── Fichiers CSV/              # Cache local des CSV (source de vérité = Drive)
+    └── Fichiers CSV/              # Cache local des CSV
         ├── nt_apdv.csv
         ├── nt_lbb.csv
         ├── nt_supergroup.csv
         ├── nt_cheritel.csv
         ├── nt_autentik.csv
-        └── df_traitee.csv         # CSV global utilisé par l’analyse (reconstruit sans reparser tous les PDF)
+        └── df_traitee.csv         # CSV global utilisé par l’analyse (reconstruit via le différentiel des données après import des PDF)
 '''
